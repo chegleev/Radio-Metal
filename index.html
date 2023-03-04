@@ -145,7 +145,7 @@
   rang.value = myStorage.getItem('vol');
   sect.style.setProperty('--vol', (50*(100/rang.value)) + 'px');
   sectdiv.style.setProperty('--vol', (50*(100/rang.value)) + 'px');
-  f.innerHTML = "Громкость: " + rang.value + " %";
+  f.innerHTML = "Гучність: " + rang.value + " %";
   
   player.addEventListener("playing", () => {
     but.src = "stop.svg";
