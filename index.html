@@ -227,7 +227,7 @@
 
       now = JSON.parse(x.responseText).song;
 
-      t.innerHTML = "Сейчас играет:<br><b>" + now + "</b><br><br>Далее в эфире:<br><b>" + JSON.parse(x.responseText).nextsongs[0] + "</b><br>";
+      t.innerHTML = "В эфире:<br><b>" + now + "</b><br><br>";
     }
     x.send();
   }
