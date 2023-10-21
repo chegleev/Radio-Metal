@@ -227,7 +227,11 @@
 
       now = JSON.parse(x.responseText).song;
 
-      t.innerHTML = "Зараз грає:<br><b>" + now + "</b><br><br>";
+      const searchRegExp = new RegExp(' ', 'g');
+
+      var ln = now.replace(searchRegExp, "+");
+
+      t.innerHTML = "Зараз грає:<br><b>" + "<a target=_blank style=color:#000000; href=https://www.youtube.com/results?search_query="+ln+">" +now+ "</a>" + "</b><br><br>";
     }
     x.send();
   }
