@@ -227,7 +227,7 @@
 
       now = JSON.parse(x.responseText).song;
 
-      t.innerHTML = "Зараз грає:<br><b>" + now + "</b><br><br>";
+      t.innerHTML = "Зараз грає:<br><b>" + "<a target=_blank style=color:#000000; href=https://www.youtube.com/results?search_query="+now+">" + now+ "</a>" + "</b><br><br>";
     }
     x.send();
   }
